@@ -1,0 +1,35 @@
+.canvas {
+    width: 500px;
+    height: 500px;
+    background-color: #f4f4f4;
+  }
+  
+  .portal {
+    width: 180px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #c9c9c9;
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    animation-name: portalOpen2;
+    animation-duration: 0.5s;
+  }
+  
+  @keyframes portalOpen {
+    0%   {width:0px; height:0px; }
+    25%  {width:45px; height:22.5px; }
+    50%  {width:90px; height:45px; }
+    75%  {width:135px; height:67.4px; }
+    100% {width:180px; height:90px; }
+  }
+  
+  @keyframes portalOpen2 {
+    0%   {transform: scale(0); }
+    25%  {transform: scale(0.25); }
+    50%  {transform: scale(0.5); }
+    75%  {transform: scale(0.75); }
+    100% {transform: scale(1); }
+  }
+  
+  
